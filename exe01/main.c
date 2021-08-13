@@ -3,7 +3,7 @@
 
 int main() {
 
-    int n1, n2, soma;
+  int n1, n2, soma;
   
   // ENTRADA DE DADOS
   scanf("%d %d", &n1, &n2);

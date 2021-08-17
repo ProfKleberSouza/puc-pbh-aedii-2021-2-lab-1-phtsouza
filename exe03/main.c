@@ -1,18 +1,24 @@
 #include <stdio.h>
 #include "functions.h"
+#define MAX 1000
 
-int main() {
+int main(){
 
-    int a, b, s;
+  int menor, maior;
+  int n, v[MAX];
   
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  // printf("Informe quantos numeros deseja passar: ");
+  scanf("%d", &n);
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  for(int i = 0; i<n; i++){
+    // printf("Informe um numero: ");
+    scanf("%d", &v[i]);
+  }
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  menor_maior(v, n, &menor, &maior);
+
+  printf("MENOR = %d\n", menor);
+  printf("MAIOR = %d", maior);
 
   return(0);
 }

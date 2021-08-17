@@ -1,2 +1,19 @@
+#include <string.h>
+#include <stdio.h>
 
-int somar(int n1, int n2);
+void inverte(char texto[]){
+    char aux;
+    int i, j;
+
+    i = 0;
+    j = strlen(texto) - 1;
+
+    while(i < j){
+        aux = texto[i];
+        texto[i] = texto[j];
+        texto[j] = aux;
+        i++;
+        j--;
+    }
+    printf("%s", texto);
+}

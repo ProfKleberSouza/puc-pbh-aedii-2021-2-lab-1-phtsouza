@@ -1,18 +1,16 @@
 #include <stdio.h>
 #include "functions.h"
+#include <string.h>
+#define MAX 1000
 
 int main() {
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  char frase[MAX];
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  // printf("Digite uma frase: ");
+  fgets(frase, MAX, stdin);
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  numero_vogais(frase);
 
   return(0);
 }

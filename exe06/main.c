@@ -3,16 +3,16 @@
 
 int main() {
 
-    int a, b, s;
+  int x, n, resposta;
+
+  // printf("Informe o numero: ");
+  scanf("%d", &x);
   
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  // printf("Informe a potencia: ");
+  scanf("%d", &n);
+  
+  resposta = potencia(x, n);
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
-
+  printf("%d", resposta);
   return(0);
 }

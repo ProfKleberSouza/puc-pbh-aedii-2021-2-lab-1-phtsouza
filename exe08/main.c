@@ -6,7 +6,7 @@ int main() {
 
   int palavra[100], final;
 
-  printf("Informe sua palavra: ");
+  // printf("Informe sua palavra: ");
   fgets(palavra, sizeof(palavra), stdin);
 
   final = strlen(palavra) - 2;

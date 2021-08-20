@@ -7,11 +7,15 @@ int main() {
   int x;
   int vet[MAX];
   
-  printf("Informe a quantidade de numeros da tabela: ");
+  // printf("Informe a quantidade de numeros da tabela: ");
   scanf("%d", &x);
 
-  primeiroTabela(x, vet);
-  tabela_verdade(x, vet);
+  if(x==0){
+    printf("0");
+  }
+  else{
+    escreveBinario(0, vet, x);
+  }
 
   return(0);
 }

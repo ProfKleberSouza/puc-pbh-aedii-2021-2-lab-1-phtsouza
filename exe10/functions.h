@@ -1,22 +1,24 @@
+#include <stdio.h>
 
-void primeiroTabela(int x, int vet[]){
-    int i;
-
-    for(i=0; i<x; i++){
-        vet[i] = 0;
-        printf("%d ",vet[i]);
-    }
-}
-
-void escreveBinario(int n, int b){
-    if(b%2==0){
-        printf(" ",)
-    }
-
-}
-
-void tabela_verdade(int d, int vet[]){
+void escreveBinario(int num, int bin[], int n){
+    int i = 0;
+    int aux = num;
     
+    for(int k = 0; k<=n; k++){
+        bin[k] = 0;
+    }
 
-
+    while(aux>0){
+        bin[i] = aux % 2;
+        i++;
+        aux /=2;
+    }
+    printf("\n");
+    for(int j = n-1; j >= 0; j--){
+        printf("%d ",bin[j]);
+    }
+    if(num < pow(2, n)-1){
+        num++;
+        escreveBinario(num, bin, n);
+    }
 }

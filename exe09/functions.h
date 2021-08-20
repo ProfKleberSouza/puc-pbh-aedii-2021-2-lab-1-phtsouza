@@ -29,3 +29,20 @@ void placar_possiveis(int m, int n, char s[], int y){
         placar_possiveis(m, n, s, y);
     }
 }
+
+void placar_faltante(int m, int n, char vet[]){
+    int i;
+    printf("\n");
+    for(i=0; i<n; i++){
+        vet[i] = 'A';
+        printf("%c", vet[i]);
+    }
+    for(i = n; i< 2*n; i++){
+        vet[i] = 'B';
+        printf("%c", vet[i]);
+    }
+    for(i; i<m+n; i++){
+        vet[i] = 'A';
+        printf("%c", vet[i]);
+    }
+}

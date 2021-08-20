@@ -3,16 +3,19 @@
 
 int main() {
 
-    int a, b, s;
-  
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  int a, b, y;
+  char placar[100];
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
+  printf("Informe o valor de A: ");
+  scanf("%d", &a);
 
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  printf("Informe o valor de B: ");
+  scanf("%d", &b);
+
+  cria_placar(a, b, placar);
+  for(y = 0; y< b; y++){
+    placar_possiveis(a, b, placar, y);
+  }
 
   return(0);
 }

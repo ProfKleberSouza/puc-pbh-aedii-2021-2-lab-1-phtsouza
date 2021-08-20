@@ -1,18 +1,17 @@
 #include <stdio.h>
 #include "functions.h"
+#define MAX 1000
 
 int main() {
 
-    int a, b, s;
+  int x;
+  int vet[MAX];
   
-  // ENTRADA DE DADOS
-  scanf("%d %d", &a, &b);
+  printf("Informe a quantidade de numeros da tabela: ");
+  scanf("%d", &x);
 
-  // PROCESSAMENTO - EXECUTANDO A FUNCAO
-  s = somar(a, b);
-
-  // SAIDA - IMPRIMINDO O RESULTADO
-  printf("SOMA = %d\n", s);
+  primeiroTabela(x, vet);
+  tabela_verdade(x, vet);
 
   return(0);
 }

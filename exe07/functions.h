@@ -1,2 +1,9 @@
 
-int somar(int n1, int n2);
+int calculaMDC(int a, int b){
+    if(b == 0){
+        return a;
+    }
+    else{
+        return calculaMDC(b, a%b);
+    }
+}

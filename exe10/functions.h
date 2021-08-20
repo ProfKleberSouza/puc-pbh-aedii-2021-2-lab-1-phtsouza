@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 void escreveBinario(int num, int bin[], int n){
     int i = 0;
